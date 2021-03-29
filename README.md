@@ -6,3 +6,9 @@ Calculates the amount of cm from for example 1:87 (H0) to MagicaVoxel Voxels (Ba
 `v` is result.<br>
 `i` is the length in cm.<br>
 `g` is the gauge. (For example: g = 87 (Gauge H0))
+
+## Author
+GamingCraft_hd
+
+## License
+The Utility-Client License
