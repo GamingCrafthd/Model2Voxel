@@ -50,7 +50,7 @@ namespace TrainCalc
                     break;
             }
 
-            Program.Form.label1.Text = "Zentimeter (1:"+Program.Gauge+")";
+            Program.Form.label1.Text = Program.LengthName + " (1:" +Program.Gauge+")";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,6 +58,44 @@ namespace TrainCalc
             Hide();
             Program.Form.Enabled = true;
             Program.Form.Focus();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            /*km (Kilometer)
+               m (Meter)
+               cm (Zentimeter)
+               mm (Millimeter)*/
+
+            switch (comboBox2.Text)
+            {
+                case "km (Kilometer)":
+                    Program.Length = 100;
+                    Program.LengthName = "Kilometer";
+                    break;
+
+                case "m (Meter)":
+                    Program.Length = 100;
+                    Program.LengthName = "Meter";
+                    break;
+
+                case "cm (Zentimeter)":
+                    Program.Length = 100;
+                    Program.LengthName = "Zentimeter";
+                    break;
+
+                case "mm (Millimeter)":
+                    Program.Length = 100;
+                    Program.LengthName = "Millimeter";
+                    break;
+
+                default:
+                    break;
+            }
+
+
+            Program.Form.label1.Text = Program.LengthName + " (1:" + Program.Gauge + ")";
+
         }
     }
 }

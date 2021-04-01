@@ -12,6 +12,9 @@ namespace TrainCalc
         ///
         public static decimal Gauge = 87;
 
+        public static decimal Length = 100;
+        public static string LengthName = "Zentimeter";
+
         public static Form1 Form;
         public static Settings Settings;
 
