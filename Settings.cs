@@ -14,6 +14,10 @@ namespace TrainCalc
         {
             switch (comboBox1.Text)
             {
+                case "1:1 (Das Vorbild)":
+                    Program.Gauge = 1;
+                    break;
+
                 case "1:32 (Spur 1)":
                     Program.Gauge = 32;
                     break;

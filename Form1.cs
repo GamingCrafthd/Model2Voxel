@@ -12,8 +12,7 @@ namespace TrainCalc
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var y = numericUpDown1.Value;
-            textBox1.Text = (y * Program.Gauge / 100 * 16) + " Voxel";
+            textBox1.Text = (numericUpDown1.Value * Program.Gauge / 100 * 16) + " Voxel";
         }
 
         private void button2_Click(object sender, EventArgs e)
